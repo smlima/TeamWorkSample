@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TeamWorkSample</string>
+    <string name="dashboard_label">DashBoard</string>
+    <string name="account_details">My Account</string>
+    <string name="projects">My Projects</string>
+    <string name="title_tasks_list">TaskLists</string>
+</resources>

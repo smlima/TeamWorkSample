@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="vm" type="com.slima.teamworksample.modules.viewmodels.ProjectViewModel"/>
+        <variable name="listener" type="com.slima.teamworksample.modules.viewmodels.ProjectListViewModel.OnItemClickListener"/>
+        <import type="android.view.View"/>
+    </data>
+
+    <LinearLayout
+        android:background="@color/grey"
+        android:layout_margin="3dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> listener.onItemClick(vm.item)}">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{vm.name}"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            tools:text="Project Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{vm.description}"
+            tools:text="Project description"/>
+
+    </LinearLayout>
+
+</layout>

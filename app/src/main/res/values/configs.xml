@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="api_key" translatable="false">twp_TEbBXGCnvl2HfvXWfkLUlzx92e3T</string>
+    <string name="base_url" translatable="false">https://yat.teamwork.com/</string>
+</resources>
